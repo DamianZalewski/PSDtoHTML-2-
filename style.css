@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: #edeff3;
+}
+
+header .logoName,
+header .logoSubname {
+    margin-top: 30px;
+    width: 100%;
+    
+
+
+}
+
+header .logoSubname {
+    margin: 0px;
+}
+
+header .logo {
+    width: 90px;
+    float: right;
+    position:absolute;
+    right:60px;
+    top:30px;
+    
+}
+
+header .namesContainer {
+    width: 230px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+
+}
+
+.visits
+{
+    width:135px;
+    background-color: #ffffff;
+    padding-top:20px;
+
+    
+}
+.visits .statCircle
+{
+    width:100px;
+    height:100px;
+    background-color: #189382;
+    margin:0 auto;
+    box-sizing: border-box;
+    border:10px solid #1fbba6;
+    border-radius:50%;
+    border-left-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.visits .statCircle .textCircle
+{
+    transform:rotate(-45deg);
+    font-size:30px;
+    font-weight: bold;
+    color:#fff;
+    margin-top:10px;
+    margin-left:2px;
+}
+
+.visits .statCircle .descCircle
+{
+    transform:rotate(-45deg);
+    color:#ffffff;
+    font-size:12px;
+    margin-left:26px;
+}
+.visits .visitDesc
+{
+    padding-top:15px;
+    font-size:14px;
+    text-align: center;
+    color:#b3b3b3;
+}
+.visits .visitDesc button
+{
+    font-size:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:15px;
+    margin-left:12px;
+    margin-right:12px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    background-color: #f7a22f;
+    border-color: #e6911e;
+}
