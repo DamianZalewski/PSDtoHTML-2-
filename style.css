@@ -1,18 +1,25 @@
 body {
-    margin: 0;
+
     padding: 0;
-    margin-right: 60px;
-    margin-left: 60px;
     background-color: #edeff3;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
 }
 
 header .logoName,
 header .logoSubname {
     margin-top: 30px;
     width: 100%;
-    
-
-
 }
 
 header .logoSubname {
@@ -22,75 +29,175 @@ header .logoSubname {
 header .logo {
     width: 90px;
     float: right;
-    position:absolute;
-    right:60px;
-    top:30px;
-    
+    position: absolute;
+    right: 60px;
+    top: 30px;
+
 }
 
 header .namesContainer {
     width: 230px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 
 }
 
-.visits
-{
-    width:135px;
+.wrapper .visits {
+    width: 135px;
     background-color: #ffffff;
-    padding-top:20px;
+    padding-top: 20px;
 
-    
+
+
 }
-.visits .statCircle
-{
-    width:100px;
-    height:100px;
+
+.wrapper .visits .statCircle {
+    width: 100px;
+    height: 100px;
     background-color: #189382;
-    margin:0 auto;
+    margin: 0 auto;
     box-sizing: border-box;
-    border:10px solid #1fbba6;
-    border-radius:50%;
+    border: 10px solid #1fbba6;
+    border-radius: 50%;
     border-left-color: #ffffff;
     transform: rotate(45deg);
 }
 
-.visits .statCircle .textCircle
-{
-    transform:rotate(-45deg);
-    font-size:30px;
+.wrapper .visits .statCircle .textCircle {
+    transform: rotate(-45deg);
+    font-size: 30px;
     font-weight: bold;
-    color:#fff;
-    margin-top:10px;
-    margin-left:2px;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 2px;
 }
 
-.visits .statCircle .descCircle
-{
-    transform:rotate(-45deg);
-    color:#ffffff;
-    font-size:12px;
-    margin-left:26px;
+.wrapper .visits .statCircle .descCircle {
+    transform: rotate(-45deg);
+    color: #ffffff;
+    font-size: 10px;
+    margin-left: 30px;
 }
-.visits .visitDesc
-{
-    padding-top:15px;
-    font-size:14px;
+
+.wrapper .visits .visitDesc {
+    padding-top: 15px;
+    font-size: 14px;
     text-align: center;
-    color:#b3b3b3;
+    color: #b3b3b3;
 }
-.visits .visitDesc button
-{
-    font-size:10px;
-    padding-top:5px;
-    padding-bottom:5px;
-    margin-top:15px;
-    margin-left:12px;
-    margin-right:12px;
+
+.wrapper .visits .visitDesc button {
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color: #ffffff;
     background-color: #f7a22f;
     border-color: #e6911e;
+}
+
+.wrapper .myNetworks {
+    vertical-align: top;
+    width: 500px;
+
+    margin-left: 30px;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #b3b3b3;
+
+}
+
+.wrapper .myNetworks figure {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.wrapper .myNetworks figure .facebook,
+.wrapper .myNetworks figure .twitter,
+.wrapper .myNetworks figure .dribbble {
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.wrapper .myNetworks figure .facebook {
+    background-color: #4d6299;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.wrapper .myNetworks figure .twitter {
+    background-color: #5bc8ec;
+}
+
+.wrapper .myNetworks figure .dribbble {
+    background-color: #ee5a92;
+}
+
+.wrapper .adminLogin {
+    width: 350px;
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 20px 20px;
+}
+
+.wrapper .adminLogin .cog {
+    color: #969696;
+    text-align: right;
+    font-size: 24px;
+}
+
+.wrapper .adminLogin figure {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper .adminLogin figure figcaption {
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.wrapper .adminLogin figure img {
+    width: 100px;
+    height: 100px;
+}
+
+.wrapper .adminLogin form {
+    text-align: center;
+}
+
+.wrapper .adminLogin form input {
+    width: 220px;
+    height: 34px;
+    box-sizing: border-box;
+    padding: 5px;
+    color: #b3b3b3;
+
+}
+
+.wrapper .adminLogin form button {
+    width: 35px;
+    height: 35px;
+    margin-left: -5px;
+    background-color: #f9ab2e;
+    color: white;
+    border-color: #f9ab2e;
+    transform: translateY(2px);
+}
+
+.wrapper .adminLogin form button .arrow {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 20px;
+
+    box-sizing: border-box;
 }

@@ -4,12 +4,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSD TO HTML #2</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="author" content="Damian Zalewski">
 </head>
 
 <body>
+
     <header>
 
         <div class="namesContainer">
@@ -19,20 +22,50 @@
 
         <img class="logo" src="img/logo.png" alt="logo">
     </header>
-    <section class="visits">
-        <div class="statCircle">
-            <div class="textCircle">
-                75%
+    <div class="wrapper">
+        <section class="visits">
+            <div class="statCircle">
+                <div class="textCircle">
+                    75%
 
+                </div>
+                <div class="descCircle">New visits</div>
             </div>
-            <div class="descCircle">New visits</div>
-        </div>
-        <div class="visitDesc">
-            <i class="fa fa-user" aria-hidden="true"></i> 1,227 people
-            <button class="report">View complete report</button>
-        </div>
-    </section>
+            <div class="visitDesc">
+                <i class="fa fa-user" aria-hidden="true"></i> 1,227 people
+                <button class="report">View complete report</button>
+            </div>
+        </section>
+        <section class="myNetworks">
+            MY NETWORKS<br>
+            <figure>
+                <i class="fab fa-twitter twitter"></i>
+                <figcaption>Twitter</figcaption>
+            </figure>
+            <figure>
+                <i class="fab fa-facebook-f facebook"></i>
+                <figcaption>Facebook</figcaption>
+            </figure>
+            <figure>
+                <i class="fab fa-dribbble dribbble"></i>
+                <figcaption>Dribbble</figcaption>
+            </figure>
 
+        </section>
+        <section class="adminLogin">
+            <div class="cog"><i class="fas fa-cog"></i></div>
+            <figure>
+                <img src="img/adminAvatar.png" alt="admin avatar picture">
+                <figcaption>Welcome back, admin</figcaption>
+            </figure>
+            <form>
+                <input type="password" placeholder="Security Code">
+                <button><i class="fas fa-arrow-right arrow"></i></button>
+            </form>
+
+        </section>
+
+    </div>
 
 </body>
 
