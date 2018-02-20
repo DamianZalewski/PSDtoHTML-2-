@@ -154,6 +154,7 @@ header .namesContainer {
     margin-left: 30px;
     background-color: #fff;
     padding: 20px 20px;
+        box-sizing: border-box;
 }
 
 .wrapper .adminLogin .cog {
@@ -312,7 +313,6 @@ header .namesContainer {
 {
     position: absolute;
     width:30px;
- 
     background-color:  #1fbba6;
     height:30px;
     padding:12px;
@@ -322,3 +322,27 @@ header .namesContainer {
     left:86%;
     bottom:30%;
 }
+
+.wrapper .register {
+    width: 350px;
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 30px 30px;
+    margin-top:30px;
+    font-size:20px;
+    box-sizing: border-box;
+    color:#cbcbcb;
+}
+.register form input
+{
+    margin-top:20px;
+    width:290px;
+    font-size:16px;
+    padding:5px;
+}
+.register form label
+{
+    font-size: 14px;
+    display: inline-block;
+}
+
