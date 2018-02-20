@@ -44,7 +44,7 @@ header .namesContainer {
 }
 
 .wrapper .visits {
-    width: 135px;
+    width: 180px;
     background-color: #ffffff;
     padding-top: 20px;
 
@@ -53,42 +53,48 @@ header .namesContainer {
 }
 
 .wrapper .visits .statCircle {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     background-color: #189382;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 10px solid #1fbba6;
+    border: 15px solid #1fbba6;
     border-radius: 50%;
     border-left-color: #ffffff;
     transform: rotate(45deg);
+
+
 }
 
-.wrapper .visits .statCircle .textCircle {
+.visits .statCircle .textCircle {
     transform: rotate(-45deg);
     font-size: 30px;
     font-weight: bold;
     color: #fff;
-    margin-top: 10px;
-    margin-left: 2px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+
 }
 
-.wrapper .visits .statCircle .descCircle {
+.visits .statCircle .descCircle {
     transform: rotate(-45deg);
     color: #ffffff;
     font-size: 10px;
-    margin-left: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+    text-align: center;
 }
 
-.wrapper .visits .visitDesc {
+.visits .visitDesc {
     padding-top: 15px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     color: #b3b3b3;
 }
 
-.wrapper .visits .visitDesc button {
-    font-size: 10px;
+.visits .visitDesc button {
+    font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 15px;
@@ -99,6 +105,7 @@ header .namesContainer {
     background-color: #f7a22f;
     border-color: #e6911e;
 }
+
 
 .wrapper .myNetworks {
     vertical-align: top;
@@ -118,9 +125,9 @@ header .namesContainer {
     margin-top: 20px;
 }
 
-.wrapper .myNetworks figure .facebook,
-.wrapper .myNetworks figure .twitter,
-.wrapper .myNetworks figure .dribbble {
+.myNetworks figure .facebook,
+.myNetworks figure .twitter,
+.myNetworks figure .dribbble {
     padding: 20px;
     border-radius: 50%;
     font-size: 30px;
@@ -128,17 +135,17 @@ header .namesContainer {
     margin-bottom: 10px;
 }
 
-.wrapper .myNetworks figure .facebook {
+.myNetworks figure .facebook {
     background-color: #4d6299;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-.wrapper .myNetworks figure .twitter {
+.myNetworks figure .twitter {
     background-color: #5bc8ec;
 }
 
-.wrapper .myNetworks figure .dribbble {
+.myNetworks figure .dribbble {
     background-color: #ee5a92;
 }
 
@@ -160,12 +167,12 @@ header .namesContainer {
     margin-top: 30px;
 }
 
-.wrapper .adminLogin figure figcaption {
+.adminLogin figure figcaption {
     color: #b3b3b3;
     margin-top: 15px;
 }
 
-.wrapper .adminLogin figure img {
+.adminLogin figure img {
     width: 100px;
     height: 100px;
 }
@@ -174,7 +181,7 @@ header .namesContainer {
     text-align: center;
 }
 
-.wrapper .adminLogin form input {
+.adminLogin form input {
     width: 220px;
     height: 34px;
     box-sizing: border-box;
@@ -183,7 +190,7 @@ header .namesContainer {
 
 }
 
-.wrapper .adminLogin form button {
+.adminLogin form button {
     width: 35px;
     height: 35px;
     margin-left: -5px;
@@ -193,11 +200,125 @@ header .namesContainer {
     transform: translateY(2px);
 }
 
-.wrapper .adminLogin form button .arrow {
+.adminLogin form button .arrow {
     border: 1px solid white;
     border-radius: 50%;
     padding: 2px;
     font-size: 20px;
 
     box-sizing: border-box;
+}
+
+.mySkills {
+    width: 180px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #919191;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mySkills article {
+    color: #c7c7c7;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.mySkills .photoshopBar,
+.mySkills .illustratorBar,
+.mySkills .wordpressBar,
+.mySkills .joomlaBar {
+    height: 10px;
+    background-color: #ebebeb;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.mySkills .photoshopBar::after,
+.mySkills .illustratorBar::after,
+.mySkills .wordpressBar::after,
+.mySkills .joomlaBar::after {
+    content: '';
+    display: block;
+    width: 70%;
+    background-color: #1fbba6;
+    height: 100%;
+}
+
+.mySkills .illustratorBar::after {
+    width: 30%;
+}
+
+.mySkills .wordpressBar::after {
+    width: 60%;
+}
+
+.mySkills .joomlaBar::after {
+    width: 90%;
+}
+
+.mySkills .downloadButton {
+    background-color: #ffffff;
+    border-color: #c7c7c7;
+    font-size: 11px;
+    color: #919191;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mySkills .downloadButton .downloadIcon {
+    color: #1fbba6;
+}
+
+.profileAlbum {
+    width: 500px;
+    background-color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 26px;
+    text-align: center;
+
+
+}
+
+.profileAlbum .viewProfile {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #1fbba6;
+    position: relative;
+}
+
+.profileAlbum .viewProfile .profile,
+.profileAlbum .viewAlbum .album {
+    font-size: 72px;
+    margin-bottom: 15px;
+}
+
+.profileAlbum .viewAlbum  {
+    width: 50%;
+    display: inline-block;
+     color: #919191;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.profileAlbum .viewProfile .orContainer
+{
+    position: absolute;
+    width:30px;
+ 
+    background-color:  #1fbba6;
+    height:30px;
+    padding:12px;
+    border:8px solid #ffffff;
+    border-radius:50%;
+    font-size:22px;
+    left:86%;
+    bottom:30%;
 }
