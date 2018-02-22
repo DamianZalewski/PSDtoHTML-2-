@@ -430,3 +430,25 @@ header .namesContainer {
     color: #919191;
     padding-left: 30px;
 }
+.profiles .profileNames
+{
+    width:70%;
+    display:inline-block;
+    vertical-align: top;
+    padding-top:15px;
+    box-sizing: border-box;
+    padding-left:15px;
+    color: #919191;
+
+}
+.profiles .profile
+{
+
+    padding-left:35px;
+    font-size:28px;
+    margin-bottom:15px;
+}
+.profileNames .proffesion
+{
+    font-size: 22px;
+}
