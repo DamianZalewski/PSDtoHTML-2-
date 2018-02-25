@@ -430,25 +430,157 @@ header .namesContainer {
     color: #919191;
     padding-left: 30px;
 }
-.profiles .profileNames
-{
-    width:70%;
-    display:inline-block;
+
+.profiles .profileNames {
+    width: 70%;
+    display: inline-block;
     vertical-align: top;
-    padding-top:15px;
+    padding-top: 15px;
     box-sizing: border-box;
-    padding-left:15px;
+    padding-left: 15px;
     color: #919191;
 
 }
-.profiles .profile
-{
 
-    padding-left:35px;
-    font-size:28px;
-    margin-bottom:15px;
+.profiles .profile {
+
+    padding-left: 35px;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
-.profileNames .proffesion
-{
+
+.profileNames .proffesion {
     font-size: 22px;
+}
+
+.myChat {
+    width: 180px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #919191;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.myChat .cog {
+    float: right;
+    font-size: 16px;
+    margin-top: 3px
+}
+
+.myChat .chatOptions {
+    font-size: 14px;
+    color: rgb(193, 193, 193);
+    margin-bottom:15px;
+
+}
+
+.myChat .chatOptions .triangle {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    border-top: 6px solid rgb(193, 193, 193);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    padding-bottom: 1px;
+    margin: 0px;
+}
+
+.myChat .member {
+    color: rgb(193, 193, 193);
+    border-bottom: 1px solid rgb(193, 193, 193);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size:14px;
+}
+.member
+{
+    position: relative;
+}
+
+.member .avatar {
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    background-color: #37cde7;
+    padding:10px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+.member .name
+{
+    display: inline-block;
+    position: absolute;
+    left:44px;
+    top:8px;
+}
+.member .status
+{
+    width:10px;
+    height:10px;
+    background-color: #afd930;
+    display:inline-block;
+    border-radius: 50%;
+    position:absolute;
+    left:44px;
+    top:28px;
+}
+.member .status::before
+{
+    content:"Available";
+    position: absolute;
+    font-size:12px;
+    left:14px;
+    top:-3px;
+}
+.member .busy
+{
+    width:10px;
+    height:10px;
+    background-color: #f2a858;
+    display:inline-block;
+    border-radius: 50%;
+    position:absolute;
+    left:44px;
+    top:28px;
+}
+.member .busy::before
+{
+    content:"Busy";
+    position: absolute;
+    font-size:12px;
+    left:14px;
+    top:-3px;
+}
+.member .busy::after
+{
+    content:"";
+    display: block;
+    width:4px;
+    height:1px;
+    position: absolute;
+    left:3px;
+    top:4px;
+    background-color: #ffffff;
+}
+.member .notAvailable
+{
+    width:10px;
+    height:10px;
+    background-color: #cacaca;
+    display:inline-block;
+    border-radius: 50%;
+    position:absolute;
+    left:44px;
+    top:28px;
+}
+.member .notAvailable::before
+{
+    content:"NotAvailable";
+    position: absolute;
+    font-size:12px;
+    left:14px;
+    top:-3px;
 }
