@@ -584,3 +584,43 @@ header .namesContainer {
     left:14px;
     top:-3px;
 }
+.profileMail
+{
+    width: 500px;
+    background-color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+.profileMail .profileNames {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: #ffffff;
+
+}
+
+.profileMail  .profilePic {
+    width: 92px;
+    height: 92px;
+    border:8px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+  
+}
+.profileMail  .profile {
+    padding-left: 35px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    background-image: url(img/profileBackground.png);
+    background-size: 100%;
+    background-position: center;
+        padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
