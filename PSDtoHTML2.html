@@ -9,10 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="author" content="Damian Zalewski">
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9YxpdU7Ppz6GiNEL51g8AcFlUNqSUf48&callback=initMap">
+    </script>
 </head>
-
 <body>
-
     <header>
 
         <div class="namesContainer">
@@ -85,7 +99,7 @@
                     <div class="busy"></div>
                 </div>
                 <div class="member">
-                <div class="avatar">
+                <div class="avatar offline">
                      <i class="fa fa-user profile" aria-hidden="true"></i>
                     </div>
                    <div class="name"> Prasad Prechu</div>
@@ -152,18 +166,44 @@
                         <span class="proffesion">Actor/Director</span>
                  </div>
              </div>
-             <div class="aboutMe"></div>
-                <div class="message"></div>
-                <div class="addFriend"></div>
-                <div class="content">
+             <div class="aboutMe ">
+                 <i class="fa fa-user" aria-hidden="true"></i> <span class="panelTitles"> About me</span>
+             </div>
+                <div class="message  activeTitle">
+                  <i class="fas fa-comment-alt"></i>  <span class="panelTitles">Message</span>
+                </div>
+                <div class="addFriend ">
+                   <i class="fas fa-plus"></i> <span class="panelTitles">Add as a friend</span>
+                </div>
+                <div class="message-panel activePanel">
                 <form>
-                    <input type="text" >
-                    <textarea></textarea>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea><br>
+                    <div class="submitForm">
                     <label>
                     <input  type="checkbox"> Reply to my email
                     </label>
                     <input type="submit" value="Send">
+                    </div>
                 </form>
+                </div>
+                <div class="aboutMe-panel">
+                    Age : 22 yo<br>
+                    Location : New York City <br>
+                    Martial status : bachelord :/
+                    
+                </div>
+                <div class="addFriend-panel">
+                    <form>
+                    
+                    <input type="text" placeholder="Name">
+                   
+                    <input type="text" placeholder="Surname">
+                    
+                    <input type="email" placeholder="E-mail">
+                    <input type="submit" value="Add">
+                    
+                    </form>
                 </div>
             </section>
         </div>
@@ -193,8 +233,18 @@
                     <input class="informations sendButton" type="submit" value="Register me !">
                 </form>
             </section>
+            <section class="map">
+                <div id="map"></div>
+                <header>
+                    OUR OFFICE
+                </header>
+                <article>
+                    State, District
+                </article>
+            </section>
         </div>
     </div>
+   
 </body>
-
+ 
 </html>
