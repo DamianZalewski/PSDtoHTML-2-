@@ -4,6 +4,7 @@ body {
     margin-bottom: 50px;
     background-color: #edeff3;
     font-family: 'Lato', sans-serif;
+    display: none;
 }
 
 .wrapper {
@@ -141,12 +142,40 @@ header .namesContainer {
     padding-right: 25px;
 }
 
+.myNetworks figure .facebook:hover {
+    background-color: #ffffff;
+    color: #4d6299;
+    border: 10px solid #4d6299;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+
+}
+
 .myNetworks figure .twitter {
     background-color: #5bc8ec;
 }
 
+.myNetworks figure .twitter:hover {
+    padding: 10px;
+    border: 10px solid #5bc8ec;
+    background-color: #ffffff;
+    color: #5bc8ec;
+    cursor: pointer;
+}
+
 .myNetworks figure .dribbble {
     background-color: #ee5a92;
+}
+
+.myNetworks figure .dribbble:hover {
+    padding: 10px;
+    border: 10px solid #ee5a92;
+    background-color: #ffffff;
+    color: #ee5a92;
+    cursor: pointer;
 }
 
 .wrapper .adminLogin {
@@ -161,6 +190,11 @@ header .namesContainer {
     color: #969696;
     text-align: right;
     font-size: 24px;
+}
+.cogIcon:hover
+{
+    cursor: pointer;
+     animation: cogRotation 3s infinite linear;   
 }
 
 .wrapper .adminLogin figure {
@@ -295,6 +329,12 @@ header .namesContainer {
     position: relative;
 }
 
+.profileAlbum .viewProfile:hover,
+.profileAlbum .viewProfile:hover .orContainer {
+    background-color: #067b6b;
+    cursor: pointer;
+}
+
 .profileAlbum .viewProfile .profile,
 .profileAlbum .viewAlbum .album {
     font-size: 72px;
@@ -309,6 +349,11 @@ header .namesContainer {
     padding: 20px;
     box-sizing: border-box;
 
+}
+
+.profileAlbum .viewAlbum:hover {
+    color: #000000;
+    cursor: pointer;
 }
 
 .profileAlbum .viewProfile .orContainer {
@@ -344,7 +389,7 @@ header .namesContainer {
 
 
 
-.register form .gender {
+.register form .genderMale {
     font-size: 14px;
     background-color: #26b9a5;
     width: 60px;
@@ -358,7 +403,7 @@ header .namesContainer {
     display: inline-block;
 }
 
-.register form .gender::after {
+.register form .genderMale::after {
     position: absolute;
     content: '';
     display: block;
@@ -368,8 +413,38 @@ header .namesContainer {
     border-radius: 50%;
     right: 2px;
     top: 10%;
+      transition: background-color 1s linear;
+}
+.register form .genderFemale {
+    font-size: 14px;
+    background-color: #db3030;
+    width: 50px;
+    border-radius: 15px;
+    padding-left: 22px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 20px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    transition: background-color 1s linear;
 }
 
+.register form .genderFemale::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 2px;
+    top: 10%;
+}
+.register form .genderFemale:hover,
+.register form .genderMale{
+    cursor: pointer;
+}
 .conditions {
     font-size: 14px;
     display: inline-block;
@@ -414,19 +489,31 @@ header .namesContainer {
 .profiles .loveBox {
     margin-left: 0px;
 }
+.profiles .loveBox:hover
+{
+    background-color: #db2d2e;
+}
 
 .profiles .friendsBox {
     background-color: #e69941;
+}
+.profiles .friendsBox:hover {
+    background-color: #fd9216;
 }
 
 .profiles .photosBox {
     background-color: #1fbba6;
 }
-
+.profiles .photosBox:hover {
+    background-color: #07a791;
+}
 .profiles .settingsBox {
     display: inline-block;
     color: #919191;
     padding-left: 30px;
+}
+.profiles .settingsBox:hover{
+    color: #6c6c6c;
 }
 
 .profiles .profileNames {
@@ -655,7 +742,11 @@ header .namesContainer {
 .profileMail .panelTitles {
     margin-left: 5px;
 }
-
+.profileMail .aboutMe:hover,
+.profileMail .message:hover,
+.profileMail .addFriend:hover{
+    cursor: pointer;
+}
 .profileMail .Message-panel {
     padding: 30px 30px;
     padding-top: 15px;
@@ -701,39 +792,46 @@ header .namesContainer {
 .profileMail .aboutMe-panel {
     color: #827e7d;
     font-size: 28px;
-    text-align:center;
+    text-align: center;
     padding: 30px 30px;
 }
-.addFriend-panel form input[type="submit"]
-{
-        background-color: #f7a22f;
+
+.addFriend-panel form input[type="submit"] {
+    background-color: #f7a22f;
     color: #ffffff;
 }
+
 .map {
     width: 350px;
     margin-left: 30px;
     background-color: #fff;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     margin-top: 30px;
     font-size: 20px;
     box-sizing: border-box;
     color: #cbcbcb;
 }
 
- #map {
-        height: 300px;
-        width: 100%;
-       }
-
-.map header
-{
-    margin-top:20px;
-    margin-left:30px;
-    color:#827e7d;
+#map {
+    height: 300px;
+    width: 100%;
 }
-.map article
-{
-    margin-left:30px;
-    color:#827e7d;
-    font-size:16px;
+
+.map header {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #827e7d;
+}
+
+.map article {
+    margin-left: 30px;
+    color: #827e7d;
+    font-size: 16px;
+}
+
+
+/* The animation code */
+@keyframes cogRotation {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
 }
