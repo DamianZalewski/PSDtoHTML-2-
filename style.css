@@ -191,10 +191,10 @@ header .namesContainer {
     text-align: right;
     font-size: 24px;
 }
-.cogIcon:hover
-{
+
+.cogIcon:hover {
     cursor: pointer;
-     animation: cogRotation 3s infinite linear;   
+    animation: cogRotation 3s infinite linear;
 }
 
 .wrapper .adminLogin figure {
@@ -413,8 +413,9 @@ header .namesContainer {
     border-radius: 50%;
     right: 2px;
     top: 10%;
-      transition: background-color 1s linear;
+    transition: background-color 1s linear;
 }
+
 .register form .genderFemale {
     font-size: 14px;
     background-color: #db3030;
@@ -441,10 +442,12 @@ header .namesContainer {
     left: 2px;
     top: 10%;
 }
+
 .register form .genderFemale:hover,
-.register form .genderMale{
+.register form .genderMale {
     cursor: pointer;
 }
+
 .conditions {
     font-size: 14px;
     display: inline-block;
@@ -489,14 +492,15 @@ header .namesContainer {
 .profiles .loveBox {
     margin-left: 0px;
 }
-.profiles .loveBox:hover
-{
+
+.profiles .loveBox:hover {
     background-color: #db2d2e;
 }
 
 .profiles .friendsBox {
     background-color: #e69941;
 }
+
 .profiles .friendsBox:hover {
     background-color: #fd9216;
 }
@@ -504,15 +508,18 @@ header .namesContainer {
 .profiles .photosBox {
     background-color: #1fbba6;
 }
+
 .profiles .photosBox:hover {
     background-color: #07a791;
 }
+
 .profiles .settingsBox {
     display: inline-block;
     color: #919191;
     padding-left: 30px;
 }
-.profiles .settingsBox:hover{
+
+.profiles .settingsBox:hover {
     color: #6c6c6c;
 }
 
@@ -742,11 +749,13 @@ header .namesContainer {
 .profileMail .panelTitles {
     margin-left: 5px;
 }
+
 .profileMail .aboutMe:hover,
 .profileMail .message:hover,
-.profileMail .addFriend:hover{
+.profileMail .addFriend:hover {
     cursor: pointer;
 }
+
 .profileMail .Message-panel {
     padding: 30px 30px;
     padding-top: 15px;
@@ -831,7 +840,125 @@ header .namesContainer {
 
 
 /* The animation code */
+
 @keyframes cogRotation {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(360deg)}
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
+
+@media only screen and (max-width: 320px) {
+    body{
+
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .wrapper
+    {
+       overflow-x:hidden;
+        width: 300px;
+    }
+    .logoContainer
+    {
+       text-align: center;
+        margin-bottom: 15px;
+    }
+    .wrapper {
+        display: block;
+    }
+    header .logo
+    {
+        position: static;
+        float:none;
+      
+    }
+    
+    .leftItems .visits,
+    .leftItems .mySkills,
+    .leftItems .myChat,
+    .middleItems .myNetworks,
+    .middleItems .profileAlbum,
+    .middleItems .profiles,
+    .middleItems .profileMail,
+    .rightItems .adminLogin,
+    .rightItems .register,
+    .rightItems .map
+    {
+        width:100%;
+    }
+    .visits .visitDesc button
+    {
+        width:80%;
+    }
+    .wrapper .myNetworks,
+    .profileAlbum,
+    .profiles,
+    .profileMail,
+    .wrapper .adminLogin,
+    .wrapper .register,
+    .map
+    {
+        margin-left:0px;
+        margin-top:30px;
+    }
+    .profileAlbum .viewProfile .orContainer{
+        left:115px;
+    }
+    .profiles .loveBox,
+    .profiles .friendsBox,
+    .profiles .photosBox
+    {
+        width:50%;
+    }
+    .profiles .profile
+    {
+        text-align: center;
+        padding-left:0px;
+    }
+    .profiles .profileNames,
+    .profileMail .profile{
+        padding-left: 0px;
+    }
+.profileMail .profileNames
+    {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .profileMail .profile{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .profileMail .panelTitles
+    {
+        font-size: 10px;
+    }
+    .profileMail .aboutMe-panel
+    {
+        font-size:18px;
+    }
+    .profileMail form input, .profileMail form textarea
+    {
+        width:80%;
+    }
+    .submitForm input[type="submit"]{
+        margin: auto;
+        margin-left: 15px;
+    }
+    .register form {
+        text-align: center;
+    }
+    .register form .informations{
+        width:90%;
+  
+    }
+    .register form .genderMale,
+    .register form .genderFemale
+    {
+        text-align: left;
+    }
+}
+
+
