@@ -1120,5 +1120,154 @@ header .namesContainer {
 
 }
 @media only screen and (min-device-width : 715px) and (max-device-width : 1200px) {
+   body{
 
+        max-width: 100vw;
+        overflow-x: hidden;
+             
+    }
+    .wrapper
+    {
+       overflow-x:hidden;
+        width: 620px;
+    }
+    .logoContainer
+    {
+       text-align: center;
+        margin-bottom: 15px;
+    }
+    .wrapper {
+        display: block;
+    }
+    header .logo
+    {
+        position: static;
+        float:none;
+      
+    }
+    
+    .leftItems .visits,
+    .leftItems .mySkills,
+    .leftItems .myChat,
+    .middleItems .myNetworks,
+    .middleItems .profileAlbum,
+    .middleItems .profiles,
+    .middleItems .profileMail,
+    .rightItems .adminLogin,
+    .rightItems .register,
+    .rightItems .map
+    {
+        width:100%;
+    }
+    .visits .visitDesc button
+    {
+        width:80%;
+    }
+    .wrapper .myNetworks,
+    .profileAlbum,
+    .profiles,
+    .profileMail,
+    .wrapper .adminLogin,
+    .wrapper .register,
+    .map
+    {
+        margin-left:0px;
+        margin-top:30px;
+    }
+    .profileAlbum .viewProfile .orContainer{
+        left:115px;
+    }
+    .profiles .loveBox,
+    .profiles .friendsBox,
+    .profiles .photosBox
+    {
+        width:50%;
+         margin-left:0px;
+    }
+
+
+    .profiles .profile
+    {
+        text-align: center;
+        padding-left:0px;
+    }
+    .profiles .settingsBox {
+    width:50%;
+        padding-left:0px;
+        text-align: center;
+    }
+    .profiles .profileNames,
+    .profileMail .profile{
+        padding-left: 0px;
+    }
+.profileMail .profileNames
+    {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .profileMail .profile{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .profileMail .panelTitles
+    {
+        font-size: 10px;
+    }
+    .profileMail .aboutMe-panel
+    {
+        font-size:18px;
+    }
+    .profileMail form input, .profileMail form textarea
+    {
+        width:80%;
+    }
+    .submitForm input[type="submit"]{
+        margin: auto;
+        margin-left: 15px;
+    }
+    .register form {
+        text-align: center;
+    }
+    .register form .informations{
+        width:90%;
+  
+    }
+    .register form .genderMale,
+    .register form .genderFemale
+    {
+        text-align: left;
+    }
+    .wrapper .visits .statCircle{
+        transform: scale(1.2,1.2) rotate(45deg);
+        margin-top:20px;
+        margin-bottom:20px;
+        
+    }
+
+    .member .name,
+    .member .avatar,
+    .member .status{
+        transform: scale(1.2,1.2);
+    }
+    .member .name
+    {
+        margin-left: 20px;
+    }
+    .member .status,
+    .member .notAvailable,
+    .member .busy{
+        margin-left: 15px;
+    }
+    .myChat .member{
+        padding-bottom: 10px;
+    }
+    .myChat .cog{
+        font-size: 20px;
+    }
+    .profileAlbum .viewProfile .orContainer{
+        left:275px;
+    }
+    .profileMail .panelTitles{
+        font-size: 16px;
+    }
 }
